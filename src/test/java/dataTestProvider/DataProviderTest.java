@@ -1,5 +1,9 @@
-public class DataProvider {
-    @org.testng.annotations.DataProvider(name = "validCredentials")
+package dataTestProvider;
+
+import org.testng.annotations.DataProvider;
+
+public class DataProviderTest {
+    @DataProvider(name = "validCredentials")
     public Object[][] getValidCredentials(){
         return new Object[][] {
                 {"standard_user","secret_sauce"},
@@ -8,14 +12,14 @@ public class DataProvider {
         };
     }
 
-    @org.testng.annotations.DataProvider(name = "invalidCredentials")
+    @DataProvider(name = "invalidCredentials")
     public Object[][] getInvalidCredentials(){
         return new Object[][] {
                 {"locked_out_user","secret_sauce"},
         };
     }
 
-    @org.testng.annotations.DataProvider (name = "getInfo")
+    @DataProvider (name = "getInfo")
     public Object[][] getInfo(){
         return new Object[][] {
                 {"Ibrahim","Kaldish","13612"},

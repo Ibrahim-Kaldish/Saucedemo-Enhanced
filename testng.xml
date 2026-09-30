@@ -2,7 +2,12 @@
 <suite name = "MySuite">
     <test name = "LoginTests">
         <classes>
-            <class name = "ValidLoginTest"/>
+            <class name = "loginTest.ValidLoginTest"/>
+            <class name = "productTest.ProductTest"/>
+            <class name = "checkoutTest.CheckoutTest"/>
+            <class name = "informationTest.InformationTest"/>
+            <class name = "overviewTest.OverviewTest"/>
+            <class name = "generateReportTest.GenerateReportTest"/>
         </classes>
     </test>
 </suite>
