@@ -7,8 +7,8 @@ public class DataProviderTest {
     public Object[][] getValidCredentials(){
         return new Object[][] {
                 {"standard_user","secret_sauce"},
-//                {"visual_user","secret_sauce"},
-//                {"error_user","secret_sauce"}
+                {"visual_user","secret_sauce"},
+                {"error_user","secret_sauce"}
         };
     }
 
